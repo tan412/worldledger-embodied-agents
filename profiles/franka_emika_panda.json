@@ -1,0 +1,19 @@
+{
+  "name": "franka_emika_panda",
+  "version": "1.0",
+  "base_type": "fixed_base",
+  "root_link": "link0",
+  "mjcf": "assets/robots/franka_emika_panda/panda.xml",
+  "vendor_names": ["Franka Emika Panda", "panda"],
+  "joint_count": 7,
+  "joint_names": ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7"],
+  "actuator_names": ["actuator1", "actuator2", "actuator3", "actuator4", "actuator5", "actuator6", "actuator7"],
+  "tcp_body": "hand",
+  "tcp_position": [0, 0, 0.1034],
+  "joint_unit": "rad",
+  "action_semantics": "position_servo_reference_rad",
+  "source_manifest": "assets/robots/franka_emika_panda/source-manifest.json",
+  "simulation_tasks": ["reach_target", "obstacle_transfer", "inspection_sweep"],
+  "hardware_test": "not_evaluated",
+  "model_note": "Pinned Menagerie model derived from vendor URDF; simplified collision and servo model. TCP is a declared tool reference."
+}

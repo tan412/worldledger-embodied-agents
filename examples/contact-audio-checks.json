@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "name": "nominal",
+      "status": "accepted",
+      "steps": 15825,
+      "notes": 16,
+      "fields": 29,
+      "archive_sha256": "8a4e775edaf4681694dbf338555dda718dfd8efbdc4d571545a84a82a9fcf483"
+    },
+    {
+      "name": "omit_left",
+      "status": "rejected",
+      "steps": 15825,
+      "notes": 8,
+      "fields": 29,
+      "archive_sha256": "1c71e40164de102b313d4efda9edebbf08c1cf958cddad5a05cd26bd99b06cec"
+    }
+  ],
+  "portable_replay": {
+    "passed": true,
+    "state_error": 0.0,
+    "force_error": 0.0,
+    "contact_error": 0.0,
+    "note_events_equal": true
+  },
+  "versions": {
+    "mujoco": "3.3.7",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "h5py": "3.14.0",
+    "opencv": "4.12.0"
+  }
+}

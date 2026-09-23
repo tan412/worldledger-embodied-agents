@@ -1,0 +1,88 @@
+{
+  "title": "WorldLedger: A Verification-Centered Architecture for Embodied Agents",
+  "version": "0.1",
+  "date": "2026-09-23",
+  "scope": "Architecture and selected engineering cases; not a policy-learning benchmark or a full data archive.",
+  "public_release_ready": true,
+  "sources": [
+    {
+      "id": "E1",
+      "claims": [
+        "Evidence provenance",
+        "Conditional validation",
+        "Trajectory and label contracts"
+      ],
+      "files": [
+        "docs/architecture.md",
+        "organoid_kernel/",
+        "tests/test_adapters_synthetic.py"
+      ]
+    },
+    {
+      "id": "E2",
+      "claims": [
+        "Context binding",
+        "Transaction-protected acceptance",
+        "Six-world integration"
+      ],
+      "files": [
+        "docs/transactional-verification.md",
+        "examples/transaction-summary.json",
+        "organoid_kernel/"
+      ]
+    },
+    {
+      "id": "E3",
+      "claims": [
+        "Teacher-data production",
+        "Restart reconciliation",
+        "Replay and portability coverage"
+      ],
+      "files": [
+        "examples/teacher-data-summary.json",
+        "report/technical-report.md"
+      ]
+    },
+    {
+      "id": "E4",
+      "claims": [
+        "World-state and artifact-platform boundary"
+      ],
+      "files": [
+        "docs/architecture.md"
+      ]
+    },
+    {
+      "id": "E5",
+      "claims": [
+        "Multi-robot trajectory accounting",
+        "Same-scene correction pairs",
+        "Replay coverage"
+      ],
+      "files": [
+        "docs/multi_robot_pipeline.md",
+        "examples/multi-robot-summary.json",
+        "examples/critic-evaluation.json"
+      ]
+    },
+    {
+      "id": "E6",
+      "claims": [
+        "Contact-derived note events",
+        "Paired nominal and omitted-hand trials",
+        "Portable event replay"
+      ],
+      "files": [
+        "examples/contact-audio-results.json",
+        "examples/contact-audio-checks.json"
+      ]
+    }
+  ],
+  "omitted_from_public_package": [
+    "Internal source snapshots",
+    "Private deployment paths and endpoints",
+    "Raw production archives",
+    "Uncleared third-party assets",
+    "Exploratory pilots outside the report scope"
+  ]
+}

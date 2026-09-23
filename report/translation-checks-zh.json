@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-23",
+  "source_version": "0.2",
+  "source_sha256": "c79513f134c8a4cfc7cd6e57ae9ce9dbdbf8ce923522e47f969c19ad89d88f27",
+  "translated_blocks": 119,
+  "block_count_matches_source": true,
+  "citation_order_matches": true,
+  "equations_match": true,
+  "pdf_pages": 8,
+  "pdf_sha256": "1fb65f721f5cb8f0490e3c4f53b5ffc6b100688e58f5e547fcee20c07ada32b4",
+  "visual_review": "passed: all eight rendered pages reviewed in contact sheets and selected pages inspected at full size",
+  "public_release_candidate": "0.1"
+}

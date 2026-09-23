@@ -1,0 +1,16 @@
+{
+  "schema": "worldledger.teacher-data-case.v1",
+  "scene_families": 20,
+  "candidate_episodes": 80,
+  "accepted": 46,
+  "rejected": 34,
+  "action_transitions": 26300,
+  "accepted_episode_transitions": 20077,
+  "approximate_size_gb": 8.3,
+  "independent_saved_control_replays": 80,
+  "restart_reconciliation": {
+    "attempt_count_before": 80,
+    "attempt_count_after": 80
+  },
+  "scope": "summary extracted from a restricted production record; raw package is not included"
+}

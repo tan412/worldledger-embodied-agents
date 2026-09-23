@@ -1,0 +1,10 @@
+{
+  "profile": "franka_emika_panda",
+  "joint_names": ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7"],
+  "joint_unit": "rad",
+  "time_unit": "s",
+  "state_semantics": "joint_position",
+  "origin": "simulated",
+  "time_key": "state_time_s",
+  "state_key": "joint_position"
+}

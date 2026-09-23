@@ -1,0 +1,37 @@
+{
+  "name": "worldledger-mcp-client",
+  "version": "0.1.1",
+  "description": "Local stdio MCP client for a WorldLedger verification service.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tan412/worldledger.git"
+  },
+  "homepage": "https://github.com/tan412/worldledger/tree/main/mcp",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "robotics",
+    "embodied-ai",
+    "dataset",
+    "qa",
+    "validation",
+    "mujoco",
+    "lerobot"
+  ],
+  "type": "module",
+  "bin": {
+    "organoid-mcp": "server.js"
+  },
+  "files": [
+    "server.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  }
+}

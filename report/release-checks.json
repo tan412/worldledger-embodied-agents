@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-23",
+  "english_pdf": {
+    "path": "report/WorldLedger-technical-report.pdf",
+    "sha256": "47ea5af6605e5ae8b36aa90e43ba79a21f107b8b6b7815be20a2d78cf846e6e7",
+    "pages": 8
+  },
+  "chinese_pdf": {
+    "path": "report/WorldLedger-technical-report-zh.pdf",
+    "sha256": "1fb65f721f5cb8f0490e3c4f53b5ffc6b100688e58f5e547fcee20c07ada32b4",
+    "pages": 8
+  },
+  "sensitive_scan": "passed",
+  "source_paths_removed": true,
+  "internal_endpoints_removed": true,
+  "doi_reserved": false,
+  "zenodo_uploaded": false
+}

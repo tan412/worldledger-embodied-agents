@@ -1,0 +1,249 @@
+{
+  "schema": "organoid.multi-robot-dataset.v1",
+  "episode_records": 480,
+  "status_counts": {
+    "success": 220,
+    "rejected": 260
+  },
+  "by_robot_task": {
+    "franka_emika_panda/reach_target": {
+      "success": 55,
+      "rejected": 25
+    },
+    "franka_emika_panda/obstacle_transfer": {
+      "rejected": 65,
+      "success": 15
+    },
+    "franka_emika_panda/inspection_sweep": {
+      "success": 42,
+      "rejected": 38
+    },
+    "universal_robots_ur5e/reach_target": {
+      "success": 60,
+      "rejected": 20
+    },
+    "universal_robots_ur5e/obstacle_transfer": {
+      "rejected": 72,
+      "success": 8
+    },
+    "universal_robots_ur5e/inspection_sweep": {
+      "success": 40,
+      "rejected": 40
+    }
+  },
+  "replay_verified": 480,
+  "label_counts": {
+    "success": {
+      "positive": 220,
+      "negative": 260,
+      "not_evaluated": 0
+    },
+    "collision_free": {
+      "positive": 264,
+      "negative": 103,
+      "not_evaluated": 113
+    },
+    "ik_feasible": {
+      "positive": 264,
+      "negative": 113,
+      "not_evaluated": 103
+    },
+    "stable_grasp": {
+      "positive": 0,
+      "negative": 0,
+      "not_evaluated": 480
+    }
+  },
+  "correction_pairs": [
+    {
+      "family": 1,
+      "robot": "universal_robots_ur5e",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0001/universal_robots_ur5e/direct",
+      "accepted": "episodes/family_0001/universal_robots_ur5e/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "046dbb19fc56789b58e72f9af438011533d8a4811debad858a9ce45715d64a0b"
+    },
+    {
+      "family": 4,
+      "robot": "franka_emika_panda",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0004/franka_emika_panda/direct",
+      "accepted": "episodes/family_0004/franka_emika_panda/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "0a9f26271543f61bb6682e8aaa0e3adf0cefd03acfc88f2f565177dfab96b7a2"
+    },
+    {
+      "family": 4,
+      "robot": "universal_robots_ur5e",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0004/universal_robots_ur5e/direct",
+      "accepted": "episodes/family_0004/universal_robots_ur5e/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "404bf497cf83331c980b3a444e064bcf81ce3916d9d4112b7f8cb2b622b51e09"
+    },
+    {
+      "family": 5,
+      "robot": "franka_emika_panda",
+      "task": "inspection_sweep",
+      "original": "episodes/family_0005/franka_emika_panda/direct",
+      "accepted": "episodes/family_0005/franka_emika_panda/fast",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "081d6be98848edacbe66b15438a2d9f303bcadabe44414026db16dc23cd822cb"
+    },
+    {
+      "family": 7,
+      "robot": "franka_emika_panda",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0007/franka_emika_panda/direct",
+      "accepted": "episodes/family_0007/franka_emika_panda/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "90e2ad00675de1ce6844b8925a98ab36957ea267e9df84010728ef3fdf1f4e13"
+    },
+    {
+      "family": 10,
+      "robot": "franka_emika_panda",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0010/franka_emika_panda/direct",
+      "accepted": "episodes/family_0010/franka_emika_panda/fast",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "0a73309e56189e6a311bf1a3aa5f860231908f2c35bd62e0b335a311af274355"
+    },
+    {
+      "family": 10,
+      "robot": "universal_robots_ur5e",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0010/universal_robots_ur5e/direct",
+      "accepted": "episodes/family_0010/universal_robots_ur5e/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "6a3455a739c16bd0510f2285af262504bb1f333dcf1201f94c53950b24eb91ec"
+    },
+    {
+      "family": 13,
+      "robot": "franka_emika_panda",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0013/franka_emika_panda/direct",
+      "accepted": "episodes/family_0013/franka_emika_panda/fast",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "4b85d7b8c8702234b75e6a28b756b37c985ce051d810d01ac202a8c9204663ee"
+    },
+    {
+      "family": 19,
+      "robot": "universal_robots_ur5e",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0019/universal_robots_ur5e/direct",
+      "accepted": "episodes/family_0019/universal_robots_ur5e/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "51dadde286c736d8bdbf0423f0a0c5f4588a622d3c406cdc7707c2fd654404ab"
+    },
+    {
+      "family": 25,
+      "robot": "franka_emika_panda",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0025/franka_emika_panda/direct",
+      "accepted": "episodes/family_0025/franka_emika_panda/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "6aebdb108fb7007568874b2d8fda4124afb86b22da1d495b0e23cf70ae3bfb15"
+    },
+    {
+      "family": 29,
+      "robot": "franka_emika_panda",
+      "task": "inspection_sweep",
+      "original": "episodes/family_0029/franka_emika_panda/direct",
+      "accepted": "episodes/family_0029/franka_emika_panda/fast",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "eb0fad44d61cd4068d177eb0d1a95cbfd96aa4a603acb124f98187615f00d5f7"
+    },
+    {
+      "family": 31,
+      "robot": "universal_robots_ur5e",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0031/universal_robots_ur5e/direct",
+      "accepted": "episodes/family_0031/universal_robots_ur5e/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "971bfc032d393123bc2705157ddda1f58f795a457ca028d0762e90742856149b"
+    },
+    {
+      "family": 37,
+      "robot": "universal_robots_ur5e",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0037/universal_robots_ur5e/direct",
+      "accepted": "episodes/family_0037/universal_robots_ur5e/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "aaaf190dfe98da2bac2df0517be531588852cf7e98432264258055b7c3db1ba5"
+    },
+    {
+      "family": 40,
+      "robot": "franka_emika_panda",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0040/franka_emika_panda/direct",
+      "accepted": "episodes/family_0040/franka_emika_panda/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "f87002025485873ffb91dd3ee8c5e1815c09d0e19d6bbf27cb9619d51fff3426"
+    },
+    {
+      "family": 49,
+      "robot": "universal_robots_ur5e",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0049/universal_robots_ur5e/direct",
+      "accepted": "episodes/family_0049/universal_robots_ur5e/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "1b66697ebf30b62d08f861856653d37cc052a4b3d85aea54a6dbeab2554379a8"
+    },
+    {
+      "family": 53,
+      "robot": "franka_emika_panda",
+      "task": "inspection_sweep",
+      "original": "episodes/family_0053/franka_emika_panda/direct",
+      "accepted": "episodes/family_0053/franka_emika_panda/fast",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "abc477a6bdf9de39ede20a1ed2b989f3b4f765f4c1852e66dd68df8940981255"
+    },
+    {
+      "family": 55,
+      "robot": "franka_emika_panda",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0055/franka_emika_panda/direct",
+      "accepted": "episodes/family_0055/franka_emika_panda/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "de892eaf30491d3a53ce492bc03c62787e07a3b7051a0c51abb0711d11f23fd7"
+    },
+    {
+      "family": 58,
+      "robot": "universal_robots_ur5e",
+      "task": "obstacle_transfer",
+      "original": "episodes/family_0058/universal_robots_ur5e/direct",
+      "accepted": "episodes/family_0058/universal_robots_ur5e/raised",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "41cc39eaa40a4e4cb268122431d7a1ac5f226558eb1ca31f75e7ea919d7c8372"
+    },
+    {
+      "family": 59,
+      "robot": "franka_emika_panda",
+      "task": "inspection_sweep",
+      "original": "episodes/family_0059/franka_emika_panda/direct",
+      "accepted": "episodes/family_0059/franka_emika_panda/fast",
+      "scope": "same-world procedural candidate correction",
+      "selection": "first physically accepted candidate in fixed order",
+      "scene_hash": "a39e11f06d4670303bdf8f9ab04da35e557fcbb5d545b783e951dd7238eb0b50"
+    }
+  ]
+}

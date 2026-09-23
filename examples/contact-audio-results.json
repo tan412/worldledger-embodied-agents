@@ -1,0 +1,50 @@
+{
+  "schema": "worldledger.contact-audio-case.v1",
+  "rows": [
+    {
+      "name": "nominal",
+      "variant": "nominal",
+      "status": "accepted",
+      "metrics": {
+        "duration_s": 31.650000000000002,
+        "expected_notes": 16,
+        "actual_notes": 16,
+        "passed_slots": 8,
+        "total_slots": 8,
+        "peak_force_n": 1.001807028118532,
+        "max_penetration_mm": 0.15143677464646715,
+        "self_penetration_mm": 0.0,
+        "max_forbidden_n": 0.0,
+        "velocity_ratio": 0.574132438402035,
+        "min_arm_margin_deg": 6.517235400636837
+      },
+      "failed_checks": []
+    },
+    {
+      "name": "omit_left",
+      "variant": "omit_left",
+      "status": "rejected",
+      "metrics": {
+        "duration_s": 31.650000000000002,
+        "expected_notes": 16,
+        "actual_notes": 8,
+        "passed_slots": 0,
+        "total_slots": 8,
+        "peak_force_n": 1.0098690116996538,
+        "max_penetration_mm": 0.15027656921120097,
+        "self_penetration_mm": 0.0,
+        "max_forbidden_n": 0.0,
+        "velocity_ratio": 0.5741322159779065,
+        "min_arm_margin_deg": 6.517235402242509
+      },
+      "failed_checks": [
+        "score"
+      ]
+    }
+  ],
+  "counts": {
+    "accepted": 1,
+    "rejected": 1,
+    "not_evaluated": 0
+  }
+}

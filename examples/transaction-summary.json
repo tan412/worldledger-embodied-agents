@@ -1,0 +1,14 @@
+{
+  "schema": "kabuki.robot-integration-demo.v1",
+  "world_count": 6,
+  "counts": {
+    "accepted": 10,
+    "rejected": 14,
+    "not_evaluated": 12
+  },
+  "fresh_candidate_attempts": 24,
+  "all_world_replays_match": true,
+  "critic_authorizes_execution": false,
+  "hardware_executed": false,
+  "purpose": "integration_test_not_heldout_generalization_evaluation"
+}

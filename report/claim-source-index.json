@@ -1,0 +1,33 @@
+{
+  "project": "WorldLedger",
+  "version": "0.1",
+  "claims": {
+    "E1": [
+      "docs/architecture.md",
+      "organoid_kernel/",
+      "tests/test_adapters_synthetic.py"
+    ],
+    "E2": [
+      "docs/transactional-verification.md",
+      "examples/transaction-summary.json",
+      "organoid_kernel/kabuki_validation.py"
+    ],
+    "E3": [
+      "examples/teacher-data-summary.json",
+      "report/technical-report.md"
+    ],
+    "E4": [
+      "docs/architecture.md"
+    ],
+    "E5": [
+      "docs/multi_robot_pipeline.md",
+      "examples/multi-robot-summary.json",
+      "examples/critic-evaluation.json"
+    ],
+    "E6": [
+      "examples/contact-audio-results.json",
+      "examples/contact-audio-checks.json"
+    ]
+  },
+  "provenance_note": "The public summaries retain counts and scope but omit restricted paths and raw production archives."
+}

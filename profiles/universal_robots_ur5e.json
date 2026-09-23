@@ -1,0 +1,18 @@
+{
+  "name": "universal_robots_ur5e",
+  "version": "1.0",
+  "base_type": "fixed_base",
+  "root_link": "base",
+  "mjcf": "assets/robots/universal_robots_ur5e/ur5e.xml",
+  "vendor_names": ["Universal Robots UR5e", "ur5e"],
+  "joint_count": 6,
+  "joint_names": ["shoulder_pan_joint", "shoulder_lift_joint", "elbow_joint", "wrist_1_joint", "wrist_2_joint", "wrist_3_joint"],
+  "actuator_names": ["shoulder_pan", "shoulder_lift", "elbow", "wrist_1", "wrist_2", "wrist_3"],
+  "tcp_site": "attachment_site",
+  "joint_unit": "rad",
+  "action_semantics": "position_servo_reference_rad",
+  "source_manifest": "assets/robots/universal_robots_ur5e/source-manifest.json",
+  "simulation_tasks": ["reach_target", "obstacle_transfer", "inspection_sweep"],
+  "hardware_test": "not_evaluated",
+  "model_note": "Pinned Menagerie model derived from vendor URDF; simplified collision and servo model. No gripper attached."
+}

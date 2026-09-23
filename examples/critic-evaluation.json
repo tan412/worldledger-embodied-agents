@@ -1,0 +1,261 @@
+{
+  "schema": "organoid.pre-execution-critic-evaluation.v2",
+  "input_policy": "Only initial state, scene and candidate geometry; no rollout outcomes.",
+  "split_unit": "scene_family_including_all_robots_and_candidates",
+  "split_episode_counts": {
+    "train": 336,
+    "validation": 72,
+    "test": 72
+  },
+  "split_family_counts": {
+    "train": 42,
+    "validation": 9,
+    "test": 9
+  },
+  "active_heads": {
+    "success": true,
+    "collision_free": true,
+    "ik_feasible": true
+  },
+  "metrics": {
+    "train": {
+      "success": {
+        "evaluated": 336,
+        "positive": 155,
+        "accuracy": 0.9285714285714286,
+        "balanced_accuracy": 0.9281411513099269,
+        "brier": 0.04425351321697235,
+        "train_prior_brier": 0.24850302934646606,
+        "confusion": {
+          "tp": 143,
+          "tn": 169,
+          "fp": 12,
+          "fn": 12
+        }
+      },
+      "collision_free": {
+        "evaluated": 256,
+        "positive": 183,
+        "accuracy": 0.94921875,
+        "balanced_accuracy": 0.9521296504229358,
+        "brier": 0.028791751712560654,
+        "train_prior_brier": 0.2038421630859375,
+        "confusion": {
+          "tp": 173,
+          "tn": 70,
+          "fp": 3,
+          "fn": 10
+        }
+      },
+      "ik_feasible": {
+        "evaluated": 263,
+        "positive": 183,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "brier": 0.0007149601588025689,
+        "train_prior_brier": 0.21165549755096436,
+        "confusion": {
+          "tp": 183,
+          "tn": 80,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "validation": {
+      "success": {
+        "evaluated": 72,
+        "positive": 33,
+        "accuracy": 0.9027777777777778,
+        "balanced_accuracy": 0.9055944055944056,
+        "brier": 0.07097599655389786,
+        "train_prior_brier": 0.24827273190021515,
+        "confusion": {
+          "tp": 31,
+          "tn": 34,
+          "fp": 5,
+          "fn": 2
+        }
+      },
+      "collision_free": {
+        "evaluated": 55,
+        "positive": 42,
+        "accuracy": 0.9090909090909091,
+        "balanced_accuracy": 0.8342490842490842,
+        "brier": 0.05351577326655388,
+        "train_prior_brier": 0.1828765869140625,
+        "confusion": {
+          "tp": 41,
+          "tn": 9,
+          "fp": 4,
+          "fn": 1
+        }
+      },
+      "ik_feasible": {
+        "evaluated": 59,
+        "positive": 42,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "brier": 0.001309327781200409,
+        "train_prior_brier": 0.20537100732326508,
+        "confusion": {
+          "tp": 42,
+          "tn": 17,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "test": {
+      "success": {
+        "evaluated": 72,
+        "positive": 32,
+        "accuracy": 0.9027777777777778,
+        "balanced_accuracy": 0.909375,
+        "brier": 0.0801226794719696,
+        "train_prior_brier": 0.24719800055027008,
+        "confusion": {
+          "tp": 31,
+          "tn": 34,
+          "fp": 6,
+          "fn": 1
+        }
+      },
+      "collision_free": {
+        "evaluated": 56,
+        "positive": 39,
+        "accuracy": 0.9107142857142857,
+        "balanced_accuracy": 0.8695324283559578,
+        "brier": 0.07233992964029312,
+        "train_prior_brier": 0.2117549329996109,
+        "confusion": {
+          "tp": 38,
+          "tn": 13,
+          "fp": 4,
+          "fn": 1
+        }
+      },
+      "ik_feasible": {
+        "evaluated": 55,
+        "positive": 39,
+        "accuracy": 0.9818181818181818,
+        "balanced_accuracy": 0.9871794871794872,
+        "brier": 0.015449482016265392,
+        "train_prior_brier": 0.2064572274684906,
+        "confusion": {
+          "tp": 38,
+          "tn": 16,
+          "fp": 0,
+          "fn": 1
+        }
+      }
+    }
+  },
+  "test_ranking": {
+    "scene_count": 18,
+    "critic_selected_success": 13,
+    "direct_success": 12,
+    "oracle_any_candidate_success": 14,
+    "note": "Offline ranking on held-out scenes; physical acceptance is still required."
+  },
+  "leave_one_robot_out": {
+    "franka_emika_panda": {
+      "episodes": 36,
+      "metrics": {
+        "success": {
+          "evaluated": 36,
+          "positive": 16,
+          "accuracy": 0.5,
+          "balanced_accuracy": 0.55,
+          "brier": 0.4108934700489044,
+          "train_prior_brier": 0.24710647761821747,
+          "confusion": {
+            "tp": 16,
+            "tn": 2,
+            "fp": 18,
+            "fn": 0
+          }
+        },
+        "collision_free": {
+          "evaluated": 28,
+          "positive": 20,
+          "accuracy": 0.75,
+          "balanced_accuracy": 0.5625,
+          "brier": 0.20074376463890076,
+          "train_prior_brier": 0.2043575793504715,
+          "confusion": {
+            "tp": 20,
+            "tn": 1,
+            "fp": 7,
+            "fn": 0
+          }
+        },
+        "ik_feasible": {
+          "evaluated": 28,
+          "positive": 20,
+          "accuracy": 0.75,
+          "balanced_accuracy": 0.5625,
+          "brier": 0.19864331185817719,
+          "train_prior_brier": 0.2043575793504715,
+          "confusion": {
+            "tp": 20,
+            "tn": 1,
+            "fp": 7,
+            "fn": 0
+          }
+        }
+      },
+      "scope": "Exploratory held-out robot and held-out scene evaluation; not deployment authorization."
+    },
+    "universal_robots_ur5e": {
+      "episodes": 36,
+      "metrics": {
+        "success": {
+          "evaluated": 36,
+          "positive": 16,
+          "accuracy": 0.5555555555555556,
+          "balanced_accuracy": 0.5,
+          "brier": 0.24650713801383972,
+          "train_prior_brier": 0.24730724096298218,
+          "confusion": {
+            "tp": 0,
+            "tn": 20,
+            "fp": 0,
+            "fn": 16
+          }
+        },
+        "collision_free": {
+          "evaluated": 28,
+          "positive": 19,
+          "accuracy": 0.6785714285714286,
+          "balanced_accuracy": 0.5,
+          "brier": 0.1958198994398117,
+          "train_prior_brier": 0.22099721431732178,
+          "confusion": {
+            "tp": 19,
+            "tn": 0,
+            "fp": 9,
+            "fn": 0
+          }
+        },
+        "ik_feasible": {
+          "evaluated": 27,
+          "positive": 19,
+          "accuracy": 0.2962962962962963,
+          "balanced_accuracy": 0.5,
+          "brier": 0.34539487957954407,
+          "train_prior_brier": 0.20859840512275696,
+          "confusion": {
+            "tp": 0,
+            "tn": 8,
+            "fp": 0,
+            "fn": 19
+          }
+        }
+      },
+      "scope": "Exploratory held-out robot and held-out scene evaluation; not deployment authorization."
+    }
+  },
+  "selected_epoch": 132,
+  "hardware_test": "not_evaluated"
+}

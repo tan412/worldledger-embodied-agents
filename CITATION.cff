@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "WorldLedger: A Verification-Centered Architecture for Embodied Agents"
+version: "0.1"
+date-released: 2026-09-23
+repository-code: "https://github.com/tan412/worldledger"
+abstract: >-
+  A verification-centered architecture for context-bound embodied-agent proposals,
+  explicit evidence, replayable execution, and separately authorized revisions.
