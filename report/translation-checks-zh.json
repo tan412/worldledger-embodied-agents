@@ -1,15 +1,13 @@
 {
   "date": "2026-09-23",
-  "source_version": "0.2",
-  "source_sha256": "bbef0ae9416a34c7aa4e4dd5df0e3ec49c5fddc6053ce57c245de52386bafcda",
-  "translation_sha256": "45fa919fb8091236d507bd6f6e88975718bb88a1e4495d4d8ac7365032c79229",
-  "translated_blocks": 161,
+  "source_sha256": "fb899fb84b249952b914279e2a9e49d56ac32c1e57700e8bf46b39fdb668ba64",
+  "translation_sha256": "feaea29116e068bc5c459b52e3fc93c5be9eecf8f2b7e3fa54bb63cfc484b2b3",
+  "translated_blocks": 105,
   "block_count_matches_source": true,
   "citation_order_matches": true,
   "equations_match": true,
-  "pdf_pages": 14,
-  "pdf_sha256": "5e807240368032faae318c0b5ea8a4d328f6fb3257ab65fd7b0d7c2d983d5f86",
+  "pdf_pages": 11,
+  "pdf_sha256": "94fe11dc3839956ed3dead6e4dc6678732d0ef6bd1e27b86efee3e4b7059e0ef",
   "figures": 6,
-  "visual_review": "All fourteen rendered pages reviewed in a contact sheet; selected diagram pages inspected at page size.",
-  "public_release_candidate": "0.2"
+  "visual_review": "All eleven rendered pages reviewed in a contact sheet; selected diagram pages inspected at page size."
 }

@@ -2,22 +2,21 @@
   "date": "2026-09-23",
   "english_pdf": {
     "path": "report/WorldLedger-technical-report.pdf",
-    "sha256": "6aa1de28758287c5994bb6b4a01ae710ea04713ac9d1fddd08885b520f7dfac4",
-    "pages": 14
+    "sha256": "74375c68dbada01a7a40494a1a4145300bac299225f28e60f59a7c781bdf8c9d",
+    "pages": 11
   },
   "chinese_pdf": {
     "path": "report/WorldLedger-technical-report-zh.pdf",
-    "sha256": "5e807240368032faae318c0b5ea8a4d328f6fb3257ab65fd7b0d7c2d983d5f86",
-    "pages": 14
+    "sha256": "94fe11dc3839956ed3dead6e4dc6678732d0ef6bd1e27b86efee3e4b7059e0ef",
+    "pages": 11
   },
   "sensitive_scan": "passed: public text files and extracted PDF text/metadata scanned; known forbidden-marker fixture excluded",
   "source_paths_removed": true,
   "internal_endpoints_removed": true,
   "doi_reserved": false,
   "zenodo_uploaded": false,
-  "release_candidate": "0.2",
   "figures_per_language": 6,
-  "fresh_simulation_rerun": false,
-  "visual_review": "All 28 rendered pages reviewed in contact sheets; selected diagram pages inspected at page size. No clipping, overlap, or missing glyphs observed.",
-  "privacy_regression": "passed on a clean export of public files (1 test)"
+  "visual_review": "All 22 rendered pages reviewed in contact sheets; selected acceptance, data, and discussion pages inspected at page size. No clipping, overlap, or missing glyphs observed.",
+  "privacy_regression": "passed on a clean export of public files (1 test)",
+  "validation_scope": "Document structure, bilingual alignment, PDF rendering, and public-file privacy"
 }

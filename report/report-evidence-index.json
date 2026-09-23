@@ -1,9 +1,7 @@
 {
   "title": "WorldLedger: A Verification-Centered Architecture for Embodied Agents",
-  "version": "0.2",
   "date": "2026-09-23",
   "scope": "Architecture and selected engineering cases; not a policy-learning benchmark or a full data archive.",
-  "public_release_ready": false,
   "sources": [
     {
       "id": "E1",
@@ -30,7 +28,7 @@
         "examples/transaction-summary.json",
         "organoid_kernel/kabuki_validation.py"
       ],
-      "distribution_note": "Verification worker included; full SQLite transaction controller is external. Historical integration counts are summary evidence."
+      "distribution_note": "Verification worker included; full SQLite transaction controller is external. Integration counts are summary evidence."
     },
     {
       "id": "E3",
@@ -43,7 +41,7 @@
         "examples/teacher-data-summary.json",
         "report/technical-report.md"
       ],
-      "distribution_note": "Public summary evidence only; complete production executables and raw archives are not shipped."
+      "distribution_note": "The JSON provides batch accounting and replay counts. Observation dimensions, sampling rates, split composition, and portability details in the report derive from production records that are not included."
     },
     {
       "id": "E4",
@@ -88,8 +86,7 @@
     "Uncleared third-party assets",
     "Exploratory pilots outside the report scope"
   ],
-  "release_status": "Illustrated public research snapshot; author metadata, rights review, and final license pending; no DOI registered.",
-  "illustrated_edition": {
+  "report_artifacts": {
     "figures_per_language": 6,
     "module_inventory": "report/technical-report.md, Appendix B",
     "build_script": "report/build_report.py"

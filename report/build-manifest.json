@@ -1,7 +1,6 @@
 {
-  "version": "0.2",
   "date": "2026-09-23",
-  "fresh_simulation_rerun": false,
+  "evidence_basis": "Recorded engineering cases in the public example summaries",
   "figure_data": [
     "examples/multi-robot-summary.json",
     "examples/transaction-summary.json",
@@ -12,8 +11,8 @@
     {
       "manuscript": "technical-report.md",
       "pdf": "WorldLedger-technical-report.pdf",
-      "manuscript_sha256": "bbef0ae9416a34c7aa4e4dd5df0e3ec49c5fddc6053ce57c245de52386bafcda",
-      "pdf_sha256": "6aa1de28758287c5994bb6b4a01ae710ea04713ac9d1fddd08885b520f7dfac4",
+      "manuscript_sha256": "fb899fb84b249952b914279e2a9e49d56ac32c1e57700e8bf46b39fdb668ba64",
+      "pdf_sha256": "74375c68dbada01a7a40494a1a4145300bac299225f28e60f59a7c781bdf8c9d",
       "figures": [
         "01-system-en.svg",
         "02-verification-en.svg",
@@ -22,13 +21,13 @@
         "05-counts-en.svg",
         "06-audio-en.svg"
       ],
-      "explicit_sections": 14
+      "explicit_sections": 11
     },
     {
       "manuscript": "technical-report-zh.md",
       "pdf": "WorldLedger-technical-report-zh.pdf",
-      "manuscript_sha256": "45fa919fb8091236d507bd6f6e88975718bb88a1e4495d4d8ac7365032c79229",
-      "pdf_sha256": "5e807240368032faae318c0b5ea8a4d328f6fb3257ab65fd7b0d7c2d983d5f86",
+      "manuscript_sha256": "feaea29116e068bc5c459b52e3fc93c5be9eecf8f2b7e3fa54bb63cfc484b2b3",
+      "pdf_sha256": "94fe11dc3839956ed3dead6e4dc6678732d0ef6bd1e27b86efee3e4b7059e0ef",
       "figures": [
         "01-system-zh.svg",
         "02-verification-zh.svg",
@@ -37,7 +36,7 @@
         "05-counts-zh.svg",
         "06-audio-zh.svg"
       ],
-      "explicit_sections": 14
+      "explicit_sections": 11
     }
   ]
 }

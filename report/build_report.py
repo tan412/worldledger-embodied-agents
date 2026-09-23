@@ -251,9 +251,10 @@ def build(lang):
         "title": ParagraphStyle("title", fontName=heading_font, fontSize=23, leading=29,
                                 textColor=INK, spaceAfter=15),
         "h2": ParagraphStyle("h2", fontName=heading_font, fontSize=14.5, leading=20,
-                             textColor=INK, spaceAfter=11, wordWrap="CJK" if zh else None),
+                             textColor=INK, spaceAfter=11, wordWrap="CJK" if zh else None,
+                             keepWithNext=True),
         "h3": ParagraphStyle("h3", fontName=heading_font, fontSize=10.8, leading=15,
-                             spaceBefore=8, spaceAfter=6, textColor=INK),
+                             spaceBefore=8, spaceAfter=6, textColor=INK, keepWithNext=True),
         "body": ParagraphStyle("body", fontName=body_font, fontSize=10 if zh else 9.5,
                                leading=15.5 if zh else 13.3, spaceAfter=8, alignment=TA_LEFT,
                                wordWrap="CJK" if zh else None),
@@ -288,8 +289,8 @@ def build(lang):
             story.append(drawings[match[2]])
             story.append(Paragraph(html.escape(match[1]), styles["caption"]))
             continue
-        if block.startswith("[[equation]] "):
-            story.append(Preformatted(block.removeprefix("[[equation]] "), styles["equation"]))
+        if block.startswith("```text\n") and block.endswith("\n```"):
+            story.append(Preformatted(block[8:-4], styles["equation"]))
             continue
         style, text = "body", block.replace("\n", " ")
         for prefix, name in (("### ", "h3"), ("## ", "h2"), ("# ", "title")):
@@ -304,7 +305,7 @@ def build(lang):
         canvas.line(46, 43, A4[0] - 46, 43)
         canvas.setFont(body_font, 7.5)
         canvas.setFillColor(MUTED)
-        canvas.drawString(46, 30, "WORLDLEDGER | " + ("图文候选版 0.2" if zh else "ILLUSTRATED RC 0.2"))
+        canvas.drawString(46, 30, "WORLDLEDGER | " + ("技术报告" if zh else "TECHNICAL REPORT"))
         canvas.drawRightString(A4[0] - 46, 30, f"2026-09-23 | {doc.page}")
         canvas.restoreState()
 
@@ -312,7 +313,7 @@ def build(lang):
                             topMargin=43, bottomMargin=58,
                             title="WorldLedger: A Verification-Centered Architecture for Embodied Agents",
                             author="WorldLedger project",
-                            subject="Illustrated release candidate 0.2; no DOI registered")
+                            subject="Context-bound actions, evidence, verification, and reproducible embodied data")
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
     return {"manuscript": source.name, "pdf": target.name,
             "manuscript_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
@@ -322,8 +323,8 @@ def build(lang):
 
 if __name__ == "__main__":
     FIGURES.mkdir(exist_ok=True)
-    manifest = {"version": "0.2", "date": "2026-09-23",
-                "fresh_simulation_rerun": False,
+    manifest = {"date": "2026-09-23",
+                "evidence_basis": "Recorded engineering cases in the public example summaries",
                 "figure_data": ["examples/multi-robot-summary.json", "examples/transaction-summary.json",
                                 "examples/teacher-data-summary.json", "examples/contact-audio-results.json"],
                 "builds": [build("en"), build("zh")]}

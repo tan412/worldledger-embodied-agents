@@ -8,8 +8,8 @@ The report focuses on general engineering principles: binding an action to the b
 
 ## Contents
 
-- `report/` — English and Chinese technical reports (14 pages each), six paired vector figures, their build script, and a public claim-source index.
-- `organoid_kernel/` — the compatibility Python package containing evidence, validation, trajectory, and replay modules.
+- `report/` — English and Chinese technical reports, six paired vector figures, their build script, and a public claim-source index.
+- `organoid_kernel/` — the Python package containing evidence, validation, trajectory, and replay modules.
 - `scripts/` — selected model-fetch, trajectory, verification, and replay entry points.
 - `examples/` — compact, path-free summaries for the cited engineering cases.
 - `docs/` — architecture, transaction boundary, multi-robot pipeline, and public-scope notes.
@@ -44,4 +44,4 @@ The public repository intentionally excludes personal information, home director
 
 ## Report and DOI status
 
-The illustrated report is release candidate 0.2, dated September 23, 2026. Read the [English report](report/technical-report.md) or [中文版](report/technical-report-zh.md); downloadable PDFs and figure build instructions are listed in [report/README.md](report/README.md). No DOI has been reserved or registered yet. Author metadata, rights review, and the final public license must be completed before a Zenodo record is published.
+Read the [English report](report/technical-report.md) or [中文版](report/technical-report-zh.md); downloadable PDFs and figure build instructions are listed in [report/README.md](report/README.md). No DOI has been reserved or registered yet. Author metadata, rights review, and the final public license must be completed before a Zenodo record is published.

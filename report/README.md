@@ -1,6 +1,6 @@
-# WorldLedger illustrated technical report
+# WorldLedger technical report
 
-Release candidate 0.2, September 23, 2026. Both language editions contain 14 pages and six figures.
+September 23, 2026. Both language editions contain six figures.
 
 - [English manuscript](technical-report.md) and [PDF](WorldLedger-technical-report.pdf)
 - [中文稿](technical-report-zh.md)与 [PDF](WorldLedger-technical-report-zh.pdf)
@@ -8,7 +8,7 @@ Release candidate 0.2, September 23, 2026. Both language editions contain 14 pag
 
 The figures cover the system and distribution boundary, verification decisions, control/state timing and dataset views, conceptual obstacle-transfer candidates, separate case counts, and contact-derived musical events. Each has an English and Chinese SVG in `figures/`. Concept diagrams are labeled as such; case counts are read from the public JSON summaries in `examples/`.
 
-The report distinguishes shipped source, external services, historical case summaries, and proposed architectural extensions. In particular, the full transaction controller, teacher production archive, and audiovisual executable are outside this snapshot. Updating the report does not rerun these experiments.
+The report distinguishes included source, external services, case evidence, and architectural extensions. The full transaction controller, teacher production archive, and audiovisual executable are external dependencies.
 
 ## Build
 
