@@ -2,7 +2,7 @@
 
 ## A Verification-Centered Architecture for Embodied Agents
 
-Technical report | Public release candidate 0.1 | September 23, 2026
+Technical report | Illustrated release candidate 0.2 | September 23, 2026
 
 Authorship and affiliations pending confirmation.
 
@@ -19,6 +19,18 @@ WorldLedger treats this dependency structure as part of the agent interface. The
 This report develops three connected ideas. First, a context-bound action contract makes the meaning of a proposal explicit. Second, a separate verification authority determines which proposals may change the accepted record. Third, the resulting evidence can be compiled into datasets with controlled observation, label, and split semantics. Together, these ideas connect world interaction, verification, and data production through a common provenance model.
 
 WorldLedger is the report-level name for this architecture. Existing implementation components retain their original names and interfaces. The selected case studies assess integration, replay, data integrity, and event grounding; they are not a comparative evaluation of policy learning or an estimate of general robot competence. The architecture is broader than the currently integrated backends, and proposed extensions are identified separately from implemented behavior.
+
+<!-- pagebreak -->
+
+## System overview and release boundary
+
+![Figure 1. System components and distribution boundary. Solid boxes identify shipped components; dashed boxes identify dependencies or implementations outside this public snapshot. Arrows show responsibility and data flow, not a single automatically configured deployment.](figures/01-system-en.svg)
+
+The public package provides two main entry paths. Existing recordings enter through adapters and conditional data validation. Generated or proposed robot trajectories enter through task-specific simulation and saved-control replay. Both paths produce explicit evidence, but their checks and acceptance semantics are not identical. The general data audit includes six claim states; the integrated robot transaction uses three decision outcomes. [E1, E2]
+
+The validation worker is shipped in organoid_kernel/kabuki_validation.py. The stateful transaction controller described in Section 3 is an external component; scripts/kabuki_robot_demo.py requires its source directory. The included mcp/service/app.py is a dataset job service, not that transaction controller. This distinction matters when reconstructing the full architecture from the public snapshot.
+
+The repository also ships profile metadata, asset-fetch tooling, trajectory conversion, skill representations, and selected task modules. Robot assets, model weights, external datasets, and backend-specific dependencies must be supplied where required. The teacher and audiovisual cases have compact public result summaries; their complete production implementations and raw archives are outside this package.
 
 <!-- pagebreak -->
 
@@ -54,8 +66,6 @@ This distinction makes the interface useful beyond one task. Backends can add ne
 
 ## 3. Verified revisions and acceptance authority
 
-[[architecture]]
-
 ### 3.1 A transaction around an embodied proposal
 
 The reference robot service locks a context, accepts a context-bound pending proposal, and launches a fresh verification worker. The worker checks bindings, executes force-limited simulation, saves the applied controls and resulting state, and independently replays those controls. The service checks receipt identity, required claims, numerical thresholds, and evidence hashes before committing. Ranking is an optional proposal-selection step; a ranking score never replaces these checks. [E2]
@@ -79,6 +89,20 @@ Content hashes bind events to their predecessors and bind decisions to evidence 
 The integrated implementation uses SQLite transactions to protect pending proposals and accepted state. Evidence is written and hashed before acceptance. Runtime failures preserve the pending proposal or produce an explicit unknown outcome; partial worker artifacts remain distinguishable from committed evidence. New verification runs use fresh identities rather than accepting a previously supplied success flag.
 
 Three invariants organize this behavior: proposal scores cannot authorize state mutation; accepted evidence must refer to the same context and action that were evaluated; and failed or incomplete attempts must not silently disappear from the record. These invariants provide concrete regression-test targets. They do not amount to a theorem about robot safety or distributed exactly-once execution.
+
+<!-- pagebreak -->
+
+## Verification workflow and decision semantics
+
+![Figure 2. Logical verification flow of the integrated robot path. Only acceptance advances the accepted revision. All three outcomes retain records. The diagram summarizes the acceptance contract; implementation checks can be interleaved.](figures/02-verification-en.svg)
+
+A candidate is evaluated under a fixed context. Ranking does not change the accepted base. Invalid bindings, missing mandatory evidence, inconsistent receipts, or unsuccessful replay cannot establish acceptance. When trustworthy evaluation supplies a violation, the candidate is rejected under the declared protocol. A complete, internally consistent pass may be committed by the external transaction authority. [E2]
+
+For example, an obstacle-transfer candidate may fail after contact with the obstacle. Its executed prefix, control sequence, and contact evidence remain inspectable. A raised alternative must use the same declared scene and initial state; acceptance cannot be obtained by quietly moving the obstacle. A missing force channel instead limits the claims that can be evaluated. These are different diagnoses and should produce different records.
+
+The general data-audit ledger preserves accepted, rejected, inconclusive, not_evaluated, not_applicable, and error at claim level. An episode-level grade is subsequently computed from policy. A warning or a data repair belongs to that grading process; it is not an additional physical observation and should not be conflated with the three transaction outcomes.
+
+The measurement-repair path is deliberately limited. A supported, identifiable measurement defect may produce a derived revision with before/after hashes. The planner reruns the relevant checks and compares physical receipts for regressions. Task failure, unknown calibration, and arbitrary behavior errors do not become automatically repairable merely because a ledger exists.
 
 <!-- pagebreak -->
 
@@ -110,6 +134,20 @@ The server release records 5,247 verified manifest entries and removal of absolu
 
 <!-- pagebreak -->
 
+## Trajectory records and causal dataset views
+
+![Figure 3. Schematic control/state alignment and evidence-to-dataset views. The upper timeline illustrates one integration step; it is not a plotted experimental trajectory. The camera rule uses the latest frame no later than the actor observation.](figures/03-data-en.svg)
+
+A trajectory record preserves distinct clocks and meanings. In the arm pipeline, integration states and applied controls are retained at a 2 ms step. The initial state and final post-control state account for N+1 state samples versus N control samples. A robot reference in radians is separate from native actuator control, which can include a gripper command on another scale. [E5]
+
+The public trajectory format stores arrays in trajectory.npz and their shape, dtype, units, clocks, and provenance in trajectory.json. A scene file, identity record, and validation receipt accompany generated episodes. External joint-state import requires joint names, units, and timestamps; importing an observation does not convert it into an executable control command.
+
+Training is a declared view over evidence. Actor observations should not receive later images or outcome measurements. Diagnostic targets remain separate, and unknown or inapplicable labels are masked. A failed episode can contain a valid prefix; assigning a negative label to every preceding action would assert more than the episode-level decision proves.
+
+Scene-family splits keep variants of one underlying scene together, reducing leakage between training and evaluation. The teacher production example adds restart reconciliation and complete saved-control replay records. This supports inspectable exports, while a general compiler for arbitrary objectives and all backends remains future work. [E3]
+
+<!-- pagebreak -->
+
 ## 5. Reference implementation and engineering cases
 
 ### 5.1 Implementation structure
@@ -135,6 +173,30 @@ The implementation keeps all variants of a scene family in one split, freezes so
 A seated, fixed-pelvis G1 + Inspire demonstration uses an authored two-arm controller and a synthetic 88-key instrument. The nominal 31.65-second trial produces sixteen contact-detected notes and passes eight score slots. A paired control omitting the left hand produces eight notes and is rejected. Each hand uses its index finger. [E6]
 
 Key travel and finger contact determine note events independently of the score. The score grades those events; audio and MIDI are synthesized from the detected events on the simulation time axis. Portable replay checks reproduce state, actuator forces, contact forces, and note events. This case illustrates how rendered outputs can be tied to inspectable physical events. It demonstrates an authored interaction, not a learned musical policy.
+
+<!-- pagebreak -->
+
+## Engineering cases: task structure and accounting
+
+![Figure 4. Conceptual obstacle-transfer candidates. Both routes share the same start, goal, and obstacle. This drawing illustrates the candidate contract; it is not an exported rollout or proof that a raised route will succeed.](figures/04-routes-en.svg)
+
+The arm case tests how multiple candidates under a shared context become replayable, labelled trajectories. Reaching, obstacle transfer, and ordered waypoint tasks exercise distinct path conditions. The robot models have their own joint geometry and actuator semantics; task-space transfer re-solves destination IK and reruns dynamics instead of copying source controls. [E5]
+
+![Figure 5. Counts from the public case summaries. Each bar has its own denominator. The twelve unevaluated service events are shown separately from the 24 simulated candidates. No pooled success rate or comparison of policy quality is implied.](figures/05-counts-en.svg)
+
+The 480-trajectory case records replay for both successful and rejected trajectories, including 19 same-scene correction pairs. The separate transaction batch exercises acceptance control and evidence retention. The 80-episode teacher batch exercises production accounting: 26,300 transitions in total and 20,077 from accepted episodes. These are three different engineering questions, not three methods on a common benchmark. [E2, E3, E5]
+
+<!-- pagebreak -->
+
+## Engineering case: contact-grounded audiovisual output
+
+![Figure 6. Contact-to-note causality and paired control results. The score evaluates detected events; it does not generate them. Numeric panels are read from the public nominal and omitted-left-hand summaries.](figures/06-audio-en.svg)
+
+This case asks whether visible and audible outputs can be tied to inspectable simulated events. An authored controller moves the two hands. Key displacement and finger contact determine note onset and release. Those events independently feed score evaluation and audio/MIDI synthesis, allowing the output to be checked against the simulated interaction. [E6]
+
+The nominal trial produces all sixteen expected notes and passes eight of eight score slots. Omitting the left-hand motion leaves eight notes but passes zero of eight slots because the intended paired events are incomplete. Contact activity alone therefore does not establish task completion. The two trials are an authored demonstration and a diagnostic control, not a statistical estimate of musical capability.
+
+Both trials last 31.65 seconds in the saved summaries. The released check record reports matching replayed state, actuator force, contact force, and note events in its portability probe. Its scope is the recorded probe; it does not establish cross-engine reproducibility. The public repository includes result and check summaries, while the instrument executable, full trajectory, RGB-D, and audiovisual archive are not bundled.
 
 <!-- pagebreak -->
 
@@ -218,7 +280,7 @@ The index below identifies the engineering evidence used in this revision. Inter
 
 [E4] World and artifact platform. The public release records this as a system boundary rather than bundling the adjacent platform implementation. Its role is summarized in docs/architecture.md; a fresh whole-platform deployment audit is outside this report.
 
-[E5] Multi-robot trajectory collection. Local repository: runs_multi_robot_480_v1/summary.json and docs/multi_robot_pipeline.md. These supply the 480-episode counts, task definitions, recorded replay coverage, and nineteen same-scene correction pairs. Absolute asset references remain a portability limitation of this historical collection.
+[E5] Multi-robot trajectory collection. Public release files: examples/multi-robot-summary.json and docs/multi_robot_pipeline.md. These supply the 480-episode counts, task definitions, recorded replay coverage, and nineteen same-scene correction pairs. Absolute asset references remain a portability limitation of this historical collection.
 
 [E6] Contact-grounded audiovisual example. Public release files: examples/contact-audio-results.json and examples/contact-audio-checks.json. These describe the fixed-pelvis model, passive keys, note detector, complete nominal and omitted-left-hand trial outcomes, and the portable replay check.
 
@@ -235,3 +297,26 @@ Architectural extensions: arbitrary proposal-generator integration, a uniform ca
 ### Reading the evidence
 
 A file hash is an integrity reference. A stored receipt is a record of an evaluation. A replay report documents its tested variables and runtime. A relocated-package check documents only its selected probes. This distinction is preserved throughout the report so that the scope of each engineering claim remains explicit.
+
+
+<!-- pagebreak -->
+
+## Appendix B. Public modules and practical entry points
+
+### B.1 Data ingestion and auditing
+
+The adapters directory covers LeRobot layouts, ROS bags, generic and vendor HDF5, UMI/Zarr, decoded motion containers, video, VR, legacy episode directories, and the unified trajectory format. Coverage is field- and schema-dependent; recognizing a container does not guarantee decoding every vendor payload. evidence.py, inventory.py, profile.py, and planner.py implement stream provenance, capability inspection, model binding, and conditional check planning.
+
+Ten registered validator groups cover quality, stream pairing, kinematics, model-based physics, motion-language consistency, sensor health, source media, hand-video evidence, visual rendering, and task-scene continuity. The generic physics validator performs quasi-static model checks; the multi-robot runner separately provides dynamic saved-control replay. Video proximity is a contact candidate, not a physical force measurement. The CLI exposes inspect, run, batch, golden-compare, and skill-related commands.
+
+### B.2 Simulation, trajectories, and skills
+
+multi_robot_tasks.py, trajectory.py, and robot_trajectory_io.py provide the arm task runner, array/metadata contract, named-joint import, and limited position-based task transfer. The profiles directory ships Panda, UR5e, and a humanoid profile; profile presence does not supply the corresponding geometry. fetch_robot_models.py fetches pinned Panda/UR5e assets. build_multi_robot_dataset.py supports --skip-training for simulation-only generation; critic training requires PyTorch separately.
+
+The skill modules represent atomic actions, object types, pre/postconditions, end-effector trajectories, mining, and graph composition. Additional humanoid task, sorting, and generic manipulation modules remain source-level building blocks with their own model and backend dependencies. A composable representation does not establish that every composed task has an executable or learned controller. This release does not supply a universal trained policy or checkpoint.
+
+### B.3 Services and distribution limits
+
+The optional HTTP job service and stdio MCP client expose dataset inspection, validation jobs, result retrieval, uploads, artifacts, and baseline comparison. Service dependencies and access configuration must be installed separately. Legacy experiment routes reference scripts not shipped in this selected snapshot; those routes require additional components. The external transaction service is also required to reproduce the complete candidate-to-commit workflow.
+
+The examples directory supplies compact summaries, not full replay packages. Historical batch counts in this report are not new results from a clean checkout. Report generation adds no simulation rerun. The public source is a research snapshot with an incomplete dependency lock and selected regression coverage; its scope is documented for readers assessing what they can reproduce today.

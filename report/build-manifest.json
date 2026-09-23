@@ -1,0 +1,43 @@
+{
+  "version": "0.2",
+  "date": "2026-09-23",
+  "fresh_simulation_rerun": false,
+  "figure_data": [
+    "examples/multi-robot-summary.json",
+    "examples/transaction-summary.json",
+    "examples/teacher-data-summary.json",
+    "examples/contact-audio-results.json"
+  ],
+  "builds": [
+    {
+      "manuscript": "technical-report.md",
+      "pdf": "WorldLedger-technical-report.pdf",
+      "manuscript_sha256": "bbef0ae9416a34c7aa4e4dd5df0e3ec49c5fddc6053ce57c245de52386bafcda",
+      "pdf_sha256": "6aa1de28758287c5994bb6b4a01ae710ea04713ac9d1fddd08885b520f7dfac4",
+      "figures": [
+        "01-system-en.svg",
+        "02-verification-en.svg",
+        "03-data-en.svg",
+        "04-routes-en.svg",
+        "05-counts-en.svg",
+        "06-audio-en.svg"
+      ],
+      "explicit_sections": 14
+    },
+    {
+      "manuscript": "technical-report-zh.md",
+      "pdf": "WorldLedger-technical-report-zh.pdf",
+      "manuscript_sha256": "45fa919fb8091236d507bd6f6e88975718bb88a1e4495d4d8ac7365032c79229",
+      "pdf_sha256": "5e807240368032faae318c0b5ea8a4d328f6fb3257ab65fd7b0d7c2d983d5f86",
+      "figures": [
+        "01-system-zh.svg",
+        "02-verification-zh.svg",
+        "03-data-zh.svg",
+        "04-routes-zh.svg",
+        "05-counts-zh.svg",
+        "06-audio-zh.svg"
+      ],
+      "explicit_sections": 14
+    }
+  ]
+}

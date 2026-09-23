@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="503.27559055118115" height="150" preserveAspectRatio="xMinYMin meet" viewBox="0 0 503 150" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="503.27559055118115" height="150"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-150)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="8" y="18" width="487.27559055118115" height="119" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<rect x="226" y="32" width="48" height="60" style="stroke: rgb(71%,32%,28%); stroke-linecap: butt; stroke-width: 1; fill: rgb(86%,76%,74%); fill-rule: evenodd;"/>
+			<text x="242.0" y="60" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,120) scale(1,-1)">障碍</text>
+			<circle cx="46" cy="46" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="38.0" y="27" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,54) scale(1,-1)">起点</text>
+			<circle cx="454" cy="46" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="446.0" y="27" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,54) scale(1,-1)">目标</text>
+			<path d="M 53,46 L 222,46 Z" style="stroke: rgb(71%,32%,28%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 4, 3;"/>
+			<path d="M 278,46 L 447,46 Z" style="stroke: rgb(71%,32%,28%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 4, 3;"/>
+			<path d="M 50,50 L 116,113 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="116 113, 114.0404 107.8116, 110.7261 111.2837" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<path d="M 116,113 L 384,113 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="384 113, 379 110.6, 379 115.4" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<path d="M 384,113 L 450,50 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="450 50, 444.7261 51.71633, 448.0404 55.18843" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="234.0" y="120" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,240) scale(1,-1)">抬高候选</text>
+			<text x="114.0" y="55" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 8px;fill: rgb(71%,32%,28%); stroke:none;" transform="translate(0,110) scale(1,-1)">直接候选</text>
+			<text x="211.63779527559058" y="3" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 8px;fill: rgb(32%,40%,44%); stroke:none;" transform="translate(0,6) scale(1,-1)">概念示意，非实测轨迹</text>
+		</g>
+	</g>
+</svg>

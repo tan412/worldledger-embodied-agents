@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="503.27559055118115" height="285" preserveAspectRatio="xMinYMin meet" viewBox="0 0 503 285" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="503.27559055118115" height="285"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-285)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="15" y="246" width="270" height="32" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="85.461" y="259.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,518) scale(1,-1)">Lock context and bind candidate</text>
+			<path d="M 150,245 L 150,236 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="150 236, 147.6 241, 152.4 241" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="15" y="203" width="270" height="32" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="94.974" y="216.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,432) scale(1,-1)">Check identity and bindings</text>
+			<path d="M 150,202 L 150,193 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="150 193, 147.6 198, 152.4 198" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="15" y="160" width="270" height="32" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="79.719" y="173.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,346) scale(1,-1)">Execute simulation / save evidence</text>
+			<path d="M 150,159 L 150,150 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="150 150, 147.6 155, 152.4 155" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="15" y="117" width="270" height="32" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="72.4785" y="130.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,260) scale(1,-1)">Check required claims / replay controls</text>
+			<path d="M 150,116 L 150,107 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="150 107, 147.6 112, 152.4 112" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="15" y="74" width="270" height="32" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="77.964" y="87.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,174) scale(1,-1)">Authorize / confirm unchanged base</text>
+			<rect x="330" y="196" width="161" height="63" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="372.9925" y="231.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(59%,44%,17%); stroke:none;" transform="translate(0,463) scale(1,-1)">NOT EVALUATED</text>
+			<text x="348.4765" y="217.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(59%,44%,17%); stroke:none;" transform="translate(0,435) scale(1,-1)">missing / inconsistent evidence</text>
+			<rect x="330" y="92" width="161" height="63" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="386.749" y="127.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(71%,32%,28%); stroke:none;" transform="translate(0,255) scale(1,-1)">REJECTED</text>
+			<text x="351.973" y="113.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(71%,32%,28%); stroke:none;" transform="translate(0,227) scale(1,-1)">witnessed evaluated violation</text>
+			<path d="M 285,219 L 329,219 Z" style="stroke: rgb(59%,44%,17%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="329 219, 324 216.6, 324 221.4" style="stroke: rgb(59%,44%,17%); stroke-linecap: butt; stroke-width: 1; fill: rgb(59%,44%,17%); fill-rule: evenodd;"/>
+			<path d="M 285,133 L 329,133 Z" style="stroke: rgb(71%,32%,28%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="329 133, 324 130.6, 324 135.4" style="stroke: rgb(71%,32%,28%); stroke-linecap: butt; stroke-width: 1; fill: rgb(71%,32%,28%); fill-rule: evenodd;"/>
+			<rect x="15" y="13" width="270" height="36" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="62.214" y="28.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(13%,48%,39%); stroke:none;" transform="translate(0,56) scale(1,-1)">ACCEPTED: advance the accepted revision</text>
+			<path d="M 150,74 L 150,50 Z" style="stroke: rgb(13%,48%,39%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="150 50, 147.6 55, 152.4 55" style="stroke: rgb(13%,48%,39%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,48%,39%); fill-rule: evenodd;"/>
+			<text x="356.4815" y="38" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,76) scale(1,-1)">Retain all outcome records</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="503.27559055118115" height="243" preserveAspectRatio="xMinYMin meet" viewBox="0 0 503 243" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="503.27559055118115" height="243"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-243)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="12" y="230" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 10px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,460) scale(1,-1)">控制与积分状态（示意）</text>
+			<circle cx="50" cy="192" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="45.248" y="209" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,418) scale(1,-1)">s0</text>
+			<text x="42.104" y="171" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,342) scale(1,-1)">t = 0</text>
+			<path d="M 57,192 L 202,192 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="202 192, 197 189.6, 197 194.4" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="124.996" y="199" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,398) scale(1,-1)">u0</text>
+			<circle cx="210" cy="192" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="205.248" y="209" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,418) scale(1,-1)">s1</text>
+			<text x="195.66" y="171" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,342) scale(1,-1)">t = 2 ms</text>
+			<path d="M 217,192 L 362,192 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="362 192, 357 189.6, 357 194.4" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="284.996" y="199" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,398) scale(1,-1)">u1</text>
+			<circle cx="370" cy="192" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="365.248" y="209" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,418) scale(1,-1)">s2</text>
+			<text x="355.66" y="171" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,342) scale(1,-1)">t = 4 ms</text>
+			<text x="419.497" y="187" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,374) scale(1,-1)">... sN</text>
+			<text x="150.75693590059058" y="148" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,296) scale(1,-1)">N 个控制量对应 N+1 个状态；控制量与参考值分开</text>
+			<rect x="115" y="92" width="270" height="37" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="223.0" y="107.5" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,215) scale(1,-1)">完整证据记录</text>
+			<path d="M 250,91 L 80,63 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="80 63, 84.54349 66.18068, 85.32357 61.44449" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<path d="M 250,91 L 250,63 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="250 63, 247.6 68, 252.4 68" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<path d="M 250,91 L 420,63 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="420 63, 414.6764 61.44449, 415.4565 66.18068" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="5" y="12" width="150" height="50" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="53.0" y="41.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,82) scale(1,-1)">执行主体观测</text>
+			<text x="43.99999999999999" y="27.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,54) scale(1,-1)">仅当前与历史输入</text>
+			<rect x="175" y="12" width="150" height="50" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="227.5" y="41.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,82) scale(1,-1)">标签与掩码</text>
+			<text x="223.0" y="27.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,54) scale(1,-1)">未知不填为零</text>
+			<rect x="345" y="12" width="150" height="50" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="397.5" y="41.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,82) scale(1,-1)">审计与重放</text>
+			<text x="388.5" y="27.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,54) scale(1,-1)">完整状态与控制</text>
+		</g>
+	</g>
+</svg>

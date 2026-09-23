@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="503.27559055118115" height="278" preserveAspectRatio="xMinYMin meet" viewBox="0 0 503 278" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="503.27559055118115" height="278"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-278)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="10" y="221" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="104.5" y="249.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,498) scale(1,-1)">已有数据</text>
+			<text x="100.0" y="235.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,470) scale(1,-1)">记录与标注</text>
+			<path d="M 122.5,220 L 122.5,203 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="122.5 203, 120.1 208, 124.9 208" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="10" y="152" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="91.0" y="180.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,360) scale(1,-1)">适配与能力盘点</text>
+			<text x="87.99853515625" y="166.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,332) scale(1,-1)">来源 / 单位 / 时钟</text>
+			<path d="M 122.5,151 L 122.5,134 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="122.5 134, 120.1 139, 124.9 139" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="10" y="83" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="100.0" y="111.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,222) scale(1,-1)">条件化检查</text>
+			<text x="95.5" y="97.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,194) scale(1,-1)">六态逐项裁决</text>
+			<rect x="268" y="221" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="362.5" y="249.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,498) scale(1,-1)">候选动作</text>
+			<text x="358.0" y="235.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,470) scale(1,-1)">任务与初态</text>
+			<path d="M 380.5,220 L 380.5,203 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="380.5 203, 378.1 208, 382.9 208" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="268" y="152" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="362.5" y="180.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,360) scale(1,-1)">任务仿真</text>
+			<text x="345.99853515625" y="166.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,332) scale(1,-1)">控制 / 状态 / 接触</text>
+			<path d="M 380.5,151 L 380.5,134 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="380.5 134, 378.1 139, 382.9 139" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="268" y="83" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="353.5" y="111.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,222) scale(1,-1)">验证工作进程</text>
+			<text x="343.87158203125" y="97.0" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,194) scale(1,-1)">新仿真 + 控制重放</text>
+			<rect x="10" y="13" width="225" height="49" rx="5" ry="5" style="stroke: rgb(9%,20%,25%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd; stroke-dasharray: 4, 3;"/>
+			<text x="91.0" y="41.5" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,83) scale(1,-1)">外部资产与数据</text>
+			<text x="91.749267578125" y="27.5" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,55) scale(1,-1)">模型 / 原始归档</text>
+			<rect x="268" y="13" width="225" height="49" rx="5" ry="5" style="stroke: rgb(9%,20%,25%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd; stroke-dasharray: 4, 3;"/>
+			<text x="349.0" y="41.5" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,83) scale(1,-1)">外部事务控制器</text>
+			<text x="358.0" y="27.5" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,55) scale(1,-1)">验收后提交</text>
+			<path d="M 380,82 L 380,63 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="380 63, 377.6 68, 382.4 68" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="155.63779527559058" y="3" style="font-family: Arial Unicode MS, Noto Sans CJK SC, sans-serif; font-size: 8px;fill: rgb(32%,40%,44%); stroke:none;" transform="translate(0,6) scale(1,-1)">共同产物：回执、轨迹、来源记录；提交服务另行提供</text>
+		</g>
+	</g>
+</svg>

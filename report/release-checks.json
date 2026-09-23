@@ -2,17 +2,22 @@
   "date": "2026-09-23",
   "english_pdf": {
     "path": "report/WorldLedger-technical-report.pdf",
-    "sha256": "47ea5af6605e5ae8b36aa90e43ba79a21f107b8b6b7815be20a2d78cf846e6e7",
-    "pages": 8
+    "sha256": "6aa1de28758287c5994bb6b4a01ae710ea04713ac9d1fddd08885b520f7dfac4",
+    "pages": 14
   },
   "chinese_pdf": {
     "path": "report/WorldLedger-technical-report-zh.pdf",
-    "sha256": "1fb65f721f5cb8f0490e3c4f53b5ffc6b100688e58f5e547fcee20c07ada32b4",
-    "pages": 8
+    "sha256": "5e807240368032faae318c0b5ea8a4d328f6fb3257ab65fd7b0d7c2d983d5f86",
+    "pages": 14
   },
-  "sensitive_scan": "passed",
+  "sensitive_scan": "passed: public text files and extracted PDF text/metadata scanned; known forbidden-marker fixture excluded",
   "source_paths_removed": true,
   "internal_endpoints_removed": true,
   "doi_reserved": false,
-  "zenodo_uploaded": false
+  "zenodo_uploaded": false,
+  "release_candidate": "0.2",
+  "figures_per_language": 6,
+  "fresh_simulation_rerun": false,
+  "visual_review": "All 28 rendered pages reviewed in contact sheets; selected diagram pages inspected at page size. No clipping, overlap, or missing glyphs observed.",
+  "privacy_regression": "passed on a clean export of public files (1 test)"
 }

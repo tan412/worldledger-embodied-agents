@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="503.27559055118115" height="283" preserveAspectRatio="xMinYMin meet" viewBox="0 0 503 283" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="503.27559055118115" height="283"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-283)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="124" y="247" width="254" height="31" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="198.224" y="259.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,519) scale(1,-1)">Authored two-hand control</text>
+			<path d="M 251,246 L 251,235 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="251 235, 248.6 240, 253.4 240" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="124" y="203" width="254" height="31" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="198.8495" y="215.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,431) scale(1,-1)">Key travel + finger contact</text>
+			<path d="M 251,202 L 251,191 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="251 191, 248.6 196, 253.4 196" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="124" y="159" width="254" height="31" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="208.475" y="171.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,343) scale(1,-1)">Detected note events</text>
+			<rect x="26" y="97" width="190" height="45" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="87.484" y="123.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,247) scale(1,-1)">Score evaluation</text>
+			<text x="86.48949999999999" y="109.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,219) scale(1,-1)">check score slots</text>
+			<path d="M 251,158 L 121,143 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="121 143, 125.6919 145.9573, 126.2421 141.1889" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="285" y="97" width="190" height="45" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="353.864" y="123.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,247) scale(1,-1)">Audio + MIDI</text>
+			<text x="333.983" y="109.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,219) scale(1,-1)">synthesize from events</text>
+			<path d="M 251,158 L 380,143 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="380 143, 374.7563 141.1936, 375.3107 145.9614" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="26" y="21" width="190" height="51" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="82.4845" y="50.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(13%,48%,39%); stroke:none;" transform="translate(0,101) scale(1,-1)">Nominal / accepted</text>
+			<text x="84.47800000000001" y="36.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(13%,48%,39%); stroke:none;" transform="translate(0,73) scale(1,-1)">16 notes; slots 8/8</text>
+			<rect x="285" y="21" width="190" height="51" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="343.48699999999997" y="50.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(71%,32%,28%); stroke:none;" transform="translate(0,101) scale(1,-1)">Omit left / rejected</text>
+			<text x="345.98" y="36.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(71%,32%,28%); stroke:none;" transform="translate(0,73) scale(1,-1)">8 notes; slots 0/8</text>
+			<text x="154.92979527559058" y="4" style="font-family: Helvetica; font-size: 8px;fill: rgb(32%,40%,44%); stroke:none;" transform="translate(0,8) scale(1,-1)">31.65 seconds per trial; outcomes reported individually</text>
+		</g>
+	</g>
+</svg>

@@ -1,13 +1,15 @@
 {
   "date": "2026-09-23",
   "source_version": "0.2",
-  "source_sha256": "c79513f134c8a4cfc7cd6e57ae9ce9dbdbf8ce923522e47f969c19ad89d88f27",
-  "translated_blocks": 119,
+  "source_sha256": "bbef0ae9416a34c7aa4e4dd5df0e3ec49c5fddc6053ce57c245de52386bafcda",
+  "translation_sha256": "45fa919fb8091236d507bd6f6e88975718bb88a1e4495d4d8ac7365032c79229",
+  "translated_blocks": 161,
   "block_count_matches_source": true,
   "citation_order_matches": true,
   "equations_match": true,
-  "pdf_pages": 8,
-  "pdf_sha256": "1fb65f721f5cb8f0490e3c4f53b5ffc6b100688e58f5e547fcee20c07ada32b4",
-  "visual_review": "passed: all eight rendered pages reviewed in contact sheets and selected pages inspected at full size",
-  "public_release_candidate": "0.1"
+  "pdf_pages": 14,
+  "pdf_sha256": "5e807240368032faae318c0b5ea8a4d328f6fb3257ab65fd7b0d7c2d983d5f86",
+  "figures": 6,
+  "visual_review": "All fourteen rendered pages reviewed in a contact sheet; selected diagram pages inspected at page size.",
+  "public_release_candidate": "0.2"
 }

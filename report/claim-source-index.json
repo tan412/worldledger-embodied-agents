@@ -1,6 +1,6 @@
 {
   "project": "WorldLedger",
-  "version": "0.1",
+  "version": "0.2",
   "claims": {
     "E1": [
       "docs/architecture.md",

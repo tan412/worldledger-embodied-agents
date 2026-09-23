@@ -8,7 +8,7 @@ The report focuses on general engineering principles: binding an action to the b
 
 ## Contents
 
-- `report/` — English and Chinese technical reports, PDFs, and a public claim-source index.
+- `report/` — English and Chinese technical reports (14 pages each), six paired vector figures, their build script, and a public claim-source index.
 - `organoid_kernel/` — the compatibility Python package containing evidence, validation, trajectory, and replay modules.
 - `scripts/` — selected model-fetch, trajectory, verification, and replay entry points.
 - `examples/` — compact, path-free summaries for the cited engineering cases.
@@ -30,11 +30,13 @@ For the fixed-base trajectory example, fetch the pinned upstream robot assets an
 
 ```bash
 python scripts/fetch_robot_models.py --robot all
-python scripts/build_multi_robot_dataset.py --families 2 --workers 1 --seed 20260911 --out /tmp/worldledger-demo
+python scripts/build_multi_robot_dataset.py --families 2 --workers 1 --seed 20260911 --skip-training --out /tmp/worldledger-demo
 python scripts/verify_multi_robot_dataset.py /tmp/worldledger-demo --replay-all --workers 1
 ```
 
-The generated output is a local development artifact. Simulation results are not hardware measurements, and a critic score never authorizes execution.
+The generated output is a local development artifact. Critic training requires a separate PyTorch installation; this example skips it. Simulation results are not hardware measurements, and a critic score never authorizes execution.
+
+The dataset verification worker is included. The full stateful transaction controller is an external component, and the teacher-data and audiovisual cases provide summaries rather than complete runnable archives. The report's system diagram and module appendix describe these boundaries.
 
 ## Scope and privacy
 
@@ -42,4 +44,4 @@ The public repository intentionally excludes personal information, home director
 
 ## Report and DOI status
 
-The report is a release candidate dated September 23, 2026. No DOI has been reserved or registered yet. Author metadata, rights review, and the final public license must be completed before a Zenodo record is published.
+The illustrated report is release candidate 0.2, dated September 23, 2026. Read the [English report](report/technical-report.md) or [中文版](report/technical-report-zh.md); downloadable PDFs and figure build instructions are listed in [report/README.md](report/README.md). No DOI has been reserved or registered yet. Author metadata, rights review, and the final public license must be completed before a Zenodo record is published.

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="503.27559055118115" height="278" preserveAspectRatio="xMinYMin meet" viewBox="0 0 503 278" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="503.27559055118115" height="278"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-278)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="10" y="221" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="96.7375" y="249.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,498) scale(1,-1)">Existing data</text>
+			<text x="79.102" y="235.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,470) scale(1,-1)">records + annotations</text>
+			<path d="M 122.5,220 L 122.5,203 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="122.5 203, 120.1 208, 124.9 208" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="10" y="152" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="81.1045" y="180.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,360) scale(1,-1)">Adapters + inventory</text>
+			<text x="81.9865" y="166.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,332) scale(1,-1)">origin / units / clocks</text>
+			<path d="M 122.5,151 L 122.5,134 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="122.5 134, 120.1 139, 124.9 139" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="10" y="83" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="84.736" y="111.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,222) scale(1,-1)">Conditional checks</text>
+			<text x="80.2405" y="97.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,194) scale(1,-1)">six-state claim ledger</text>
+			<rect x="268" y="221" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="347.983" y="249.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,498) scale(1,-1)">Proposed action</text>
+			<text x="345.859" y="235.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,470) scale(1,-1)">task + initial state</text>
+			<path d="M 380.5,220 L 380.5,203 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="380.5 203, 378.1 208, 382.9 208" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="268" y="152" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="349.243" y="180.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,360) scale(1,-1)">Task simulation</text>
+			<text x="330.7255" y="166.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,332) scale(1,-1)">controls / state / contacts</text>
+			<path d="M 380.5,151 L 380.5,134 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="380.5 134, 378.1 139, 382.9 139" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="268" y="83" width="225" height="48" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="343.492" y="111.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,222) scale(1,-1)">Verification worker</text>
+			<text x="330.604" y="97.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,194) scale(1,-1)">fresh run + control replay</text>
+			<rect x="10" y="13" width="225" height="49" rx="5" ry="5" style="stroke: rgb(9%,20%,25%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd; stroke-dasharray: 4, 3;"/>
+			<text x="77.851" y="41.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,83) scale(1,-1)">External assets + data</text>
+			<text x="78.98949999999999" y="27.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,55) scale(1,-1)">models / raw archives</text>
+			<rect x="268" y="13" width="225" height="49" rx="5" ry="5" style="stroke: rgb(9%,20%,25%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd; stroke-dasharray: 4, 3;"/>
+			<text x="325.231" y="41.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,83) scale(1,-1)">External transaction service</text>
+			<text x="331.4815" y="27.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,55) scale(1,-1)">commit after acceptance</text>
+			<path d="M 380,82 L 380,63 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="380 63, 377.6 68, 382.4 68" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="116.69379527559056" y="3" style="font-family: Helvetica; font-size: 8px;fill: rgb(32%,40%,44%); stroke:none;" transform="translate(0,6) scale(1,-1)">Shared outputs: evidence records; the commit service is supplied separately</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="503.27559055118115" height="243" preserveAspectRatio="xMinYMin meet" viewBox="0 0 503 243" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="503.27559055118115" height="243"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-243)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="12" y="230" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,460) scale(1,-1)">Applied control and integration state (schematic)</text>
+			<circle cx="50" cy="192" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="45.248" y="209" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,418) scale(1,-1)">s0</text>
+			<text x="42.104" y="171" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,342) scale(1,-1)">t = 0</text>
+			<path d="M 57,192 L 202,192 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="202 192, 197 189.6, 197 194.4" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="124.996" y="199" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,398) scale(1,-1)">u0</text>
+			<circle cx="210" cy="192" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="205.248" y="209" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,418) scale(1,-1)">s1</text>
+			<text x="195.66" y="171" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,342) scale(1,-1)">t = 2 ms</text>
+			<path d="M 217,192 L 362,192 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="362 192, 357 189.6, 357 194.4" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="284.996" y="199" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,398) scale(1,-1)">u1</text>
+			<circle cx="370" cy="192" r="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<text x="365.248" y="209" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,418) scale(1,-1)">s2</text>
+			<text x="355.66" y="171" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,342) scale(1,-1)">t = 4 ms</text>
+			<text x="419.497" y="187" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,374) scale(1,-1)">... sN</text>
+			<text x="111.70579527559059" y="148" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,296) scale(1,-1)">N applied controls; N+1 states; actuator controls differ from references</text>
+			<rect x="115" y="92" width="270" height="37" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="209.4865" y="107.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,215) scale(1,-1)">Full evidence record</text>
+			<path d="M 250,91 L 80,63 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="80 63, 84.54349 66.18068, 85.32357 61.44449" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<path d="M 250,91 L 250,63 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="250 63, 247.6 68, 252.4 68" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<path d="M 250,91 L 420,63 Z" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<polygon points="420 63, 414.6764 61.44449, 415.4565 66.18068" style="stroke: rgb(14%,40%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,40%,54%); fill-rule: evenodd;"/>
+			<rect x="5" y="12" width="150" height="50" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="42.735499999999995" y="41.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,82) scale(1,-1)">Actor observations</text>
+			<text x="29.973499999999994" y="27.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,54) scale(1,-1)">present / past inputs only</text>
+			<rect x="175" y="12" width="150" height="50" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="218.6125" y="41.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,82) scale(1,-1)">Labels + masks</text>
+			<text x="209.98149999999998" y="27.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,54) scale(1,-1)">unknown is not zero</text>
+			<rect x="345" y="12" width="150" height="50" rx="5" ry="5" style="stroke: rgb(74%,80%,82%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(93%,95%,96%); fill-rule: evenodd;"/>
+			<text x="392.361" y="41.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,82) scale(1,-1)">Audit + replay</text>
+			<text x="380.1075" y="27.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,20%,25%); stroke:none;" transform="translate(0,54) scale(1,-1)">full states + controls</text>
+		</g>
+	</g>
+</svg>
